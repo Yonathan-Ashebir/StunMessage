@@ -665,7 +665,7 @@ class base_message {
       return it;
     }
 
-    const reference operator*() {
+     reference operator*() {
       return attr_;
     }
     const pointer operator->() {

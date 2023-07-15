@@ -4,13 +4,6 @@ project(stun-msg)
 
 add_subdirectory(gtest)
 
-config_compiler_and_linker()  # Defined in gtest/cmake/internal_utils.cmake.
-set(CMAKE_C_FLAGS ${CMAKE_CXX_FLAGS})
-set(CMAKE_C_FLAGS_DEBUG ${CMAKE_CXX_FLAGS_DEBUG})
-set(CMAKE_C_FLAGS_RELEASE ${CMAKE_CXX_FLAGS_RELEASE})
-set(CMAKE_C_FLAGS_MINSIZEREL ${CMAKE_CXX_FLAGS_MINSIZEREL})
-set(CMAKE_C_FLAGS_RELWITHDEBINFO ${CMAKE_CXX_FLAGS_RELWITHDEBINFO})
-
 include_directories(include)
 
 add_library(stunmsg STATIC
